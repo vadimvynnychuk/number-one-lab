@@ -1,0 +1,116 @@
+.section-top{
+    padding: 4rem 0 8rem;
+
+    h1{
+        font-size: 82px;
+        font-weight: 500;
+        line-height: .9;
+        margin-bottom: 1.5rem;
+    }
+
+    h2{
+        font-weight: 600;
+        font-size: 16px;
+        color: $light-blue;
+    }
+
+    .img-wrap{
+        img{
+            width: 572px;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    button{
+        margin-top: .5rem;
+        padding: .3rem 3.5rem;
+    }
+
+    .destop-btn{
+        @include media-for (null, $sm){
+            display: none;
+        }
+    }
+    .mob-btn{
+        display: none;
+        @include media-for (null, $sm){
+            display: block;
+        }
+    }
+
+    .img-wrap{
+        position: relative;
+        z-index: 10;
+
+        &::after{
+            height: 200px;
+            left: auto;
+            right: -9%;
+            top: 57%;
+            width: 181px;
+            background: url('../../../images/dist/arrow-wawe.svg');
+            background-size: 100%;
+
+        }
+        &::before{
+            left: -22%;
+            right: auto;
+            bottom: -10%;
+            background: url('../../../images/dist/bg-net.png');
+            width: 477px;
+            height: 413px;
+            background-size: 90%;
+        }
+
+        &::before,&::after{
+            position: absolute;
+            z-index: -1;
+            content: '';
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .decor-icons{
+            position: absolute;
+            width: 134px;
+            height: 134px;
+            box-shadow: 0px 0px 5px -1px $shadow;
+            background-color: $white;
+            border-radius: 24px;
+            padding: 1.5rem ;
+            .vector-wrap{
+                background-color: $accent;
+                width: 50px;
+                height: 50px;
+                margin: auto;
+                margin-bottom: 1rem;
+                border-radius: 10px;
+                padding: .4rem;
+                img{
+                    display: inline;
+                    width: auto;
+                }
+            }
+            h5{
+                text-align: center;
+                font-size: 15px;
+            }
+
+        }
+        .decor-icons-1{
+            top: 37%;
+            left: 3%;
+        }
+        .decor-icons-2{
+            right: 4%;
+            top: 20%;
+        }
+        .decor-icons-3{
+            bottom: -3%;
+            right: 20%;
+        }
+    }
+
+    
+}

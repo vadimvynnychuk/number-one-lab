@@ -1,0 +1,197 @@
+.testing-services{
+    background: url('../../../images/dist/bg-net.png');
+    background-position: 70% 23%;
+    background-repeat: no-repeat;
+    background-size: 17%;
+    padding: 2rem 0;
+    h3{
+        font-size: 66px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    h5{
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+
+    .swiper-wrapper{
+        box-shadow: 0px 6px 16px -14px $shadow;
+        padding: 3rem 0;
+    }
+
+    .services-slider{
+
+        .slide-card{
+            border: 1px solid #130e54;
+            border-radius: 32px;
+            height: 136px;
+            padding: 9px 10px;
+            width: 138px;
+            .img-wrap{
+                background-color: #ffc38f;
+                border-radius: 32px;
+                height: 115px;
+                position: relative;
+                width: 116px;
+                img{
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-49%,-52%);
+                    width: 127%;
+                }
+                .slide-img-1{
+                    transform: translate(-57%,-58%);
+                    width: 111%;
+                }
+
+
+                .slide-img-6{
+                    transform: translate(-43%,-54%);
+                    width: 113%;
+                }
+            }
+        }
+
+
+    }
+
+    .info-services{
+        padding: 3rem 0;
+        background: url('../../../images/dist/bg-net.png') 36% 75%  no-repeat, #FBFBFB;
+        background-size: 16%;
+        .info-block{
+            margin-bottom: 2rem;
+            h4{
+                margin-bottom: 1rem;
+            }
+        }
+        .blue-link{
+            &:last-child{
+                text-align: center;
+            }
+        }
+        .card-testing{
+            position: relative;
+            padding: .6rem .6rem .6rem 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: $white;
+            box-shadow: 0px 0px 3px 0px $shadow;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+
+            &::before{
+                position: absolute;
+                content: '';
+                left: 3%;
+                top: 6%;
+                transform: translate(0,0);
+                width: 20px;
+                height: 27px;
+                background: url('../../../images/dist/sti-test.svg') ;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            .left-col{
+                width: 53%;
+                h4{
+                    margin-bottom: 1.5rem;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                border-right: 1px solid $accent;
+                padding-right: 10px;
+            }
+
+            .right-col{
+                width: 47%;
+                padding: 5px 0 0 10px;
+                .labels-wrap{
+                    display: flex;
+                    justify-content: space-between;
+                    .label{
+                        background-color: #B7E6FF;
+                        border-radius: 20px;
+                        color: $accent;
+                        padding: 0.1rem .4rem;
+                        display: flex;
+                        align-items: center;
+                        font-size: 10px;
+                        font-weight: 500;
+                    }
+                    .label-sale{
+                        background-color: #FB9696;
+                        padding: 0rem .3rem;
+                        span{
+                            position: relative;
+                            background-color: $white;
+                            border-radius: 50%;
+                            width: 15px;
+                            height: 15px;
+                            display: block;
+                            margin-right: .4rem;
+                            &::before{
+                                position: absolute;
+                                content: '%';
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+                    }
+                }
+                .prices{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 1.5rem 0 .5rem;
+                    .new-price{
+                        font-size: 20px;
+                        font-weight: 600;
+                        display: block;
+                        text-align: center;
+                        margin-right: .5rem;
+                    }
+                    .old-price{
+                        font-size: 400;
+                        font-size: 14px;
+                        text-decoration: line-through;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+                a{
+                    display: block;
+                    margin: auto;
+                    border: 1px solid $light-blue;
+					color: $light-blue;
+					border-radius: 8px;
+                    padding: .2rem .7rem;
+                    text-align: center;
+                    &:hover{
+                        border: 1px solid $white;
+                        color: $white;
+                        background-color: $light-blue;
+                        transform: scale(1);
+                        svg{
+                            path{
+                                stroke: $white;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

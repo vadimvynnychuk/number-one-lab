@@ -1,0 +1,94 @@
+// GENERAL PROJECT STYLES
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    color: $accent;
+}
+
+.container-fluid{
+    padding-left: var(--bs-gutter-x, 50px);
+    padding-right: var(--bs-gutter-x,50px);
+}
+
+p{
+    font-weight: 300;
+    color: $text-accent;
+    font-size: 16px;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    text-decoration: none;   
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    color: $accent;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover{
+        transform: scale(1.1);
+        color: $white;
+    }
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.bg-dark-blue{
+    background-color: $accent;
+    border-radius: 8px;
+    color: $white;
+    padding: .3rem 1.5rem;
+}
+
+.p-title{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+svg{
+    transition: all .2s ease-in-out;
+    path{
+        transition: all .2s ease-in-out;
+    }
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+    transition: all .2s ease-in-out;
+    border-radius: 8px;
+    color: $accent;
+}
+
+.blue-link{
+    color: $light-blue;
+    text-decoration: underline;
+    &:hover{
+        color: $light-blue;
+        transform: scale(1);
+    }
+}
+
+.btn-opacy{
+    border: 1px solid $white;
+    border-radius: 8px;
+    display: block;
+    color: $white;
+    text-align: center;
+    padding: .3rem 0;
+    font-size: 15px;
+}
