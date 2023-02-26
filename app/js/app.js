@@ -3,18 +3,13 @@
 
 import Swiper, {
 	Pagination,
-	EffectFade,
-	Autoplay,
-	Navigation,
-	Thumbs
-  } from "swiper";
+	Navigation
 
+  } from "swiper";
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Swiper.use([Pagination, EffectFade, Autoplay, Navigation,Thumbs]);
-
-	// Custom JS
+	// Slider
 
 	var swiperNew = new Swiper(".services-slider", {
         slidesPerView: 6,
@@ -46,5 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     });
+
+	//burger
+
+	let burgerMenu = document.getElementById('burger');
+	let overlay = document.getElementById('menu');
+	let body = document.querySelector("body");
+
+	burgerMenu.addEventListener('click',function(){
+		this.classList.toggle("burger-active");
+		overlay.classList.toggle("overlay");
+		body.classList.toggle("overflow");
+	});
 
 })
