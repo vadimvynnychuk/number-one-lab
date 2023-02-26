@@ -78,6 +78,9 @@ header {
 						border: 1px solid $light-blue;
 						color: $light-blue;
 						border-radius: 8px;
+						@include media-for (null, $tablet){
+							border: 1px solid $white;
+						}
 						svg{
 							path{
 								stroke: $light-blue;
