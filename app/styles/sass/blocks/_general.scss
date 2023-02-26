@@ -3,9 +3,6 @@
 body{
     font-family: 'Work Sans', sans-serif;
     color: $accent;
-    @include media-for (null, $tablet){
-        overflow-x: hidden;
-    }
 }
 
 

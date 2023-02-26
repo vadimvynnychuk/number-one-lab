@@ -124,14 +124,14 @@ header {
 
 .header-mob-down{
 	@include media-for (null, $tablet){
-		padding: .7rem 30px;
+		padding: .7rem 15px;
 	}
 }
 
 .header-mob-top{
 	@include media-for (null, $tablet){
 		background-color: $accent;
-		padding: .2rem 30px;
+		padding: .2rem 15px;
 		.btns-header{
 			color: $white;
 			svg{
