@@ -2,34 +2,142 @@ header {
 	padding: 2rem 0;
 	box-shadow:  1px -1px 10px -1px $shadow;
 	border-radius: 0 0 24px 24px;
+	@include media-for (null, $tablet){
+		padding: 0;
+		border-radius: 0 0 12px 12px;
+	}
+
+	.container-fluid{
+		padding-left: var(--bs-gutter-x, 50px);
+		padding-right: var(--bs-gutter-x,50px);
+		@include media-for (null, $tablet){
+			padding-left: var(--bs-gutter-x, 0px);
+			padding-right: var(--bs-gutter-x, 0px);
+		}
+	}
+
+	.logo{
+		@include media-for (null, $tablet){
+			width: 40%;
+			a{
+				img{
+					width: 80%;
+				}
+			}
+		}
+		span{
+			font-size: 9px;
+			font-weight: 500;
+			margin-left: auto;
+			padding: 0.1rem 0.4rem;
+			display: block;
+			width: 5rem;
+			width: 3rem;
+			background-color: #2eb7ff;
+			border-radius: 5px;
+			color: #fff;
+			text-align: center;
+		
+			@include media-for (null, $tablet){
+				display: none;
+			}
+		}
+	}
+
 	nav{
 		width: 70%;
+		@include media-for (null, $tablet){
+			width: 68%;
+		}
 		ul{
 			display: flex;
 			justify-content: space-between;
-			a{
-				padding: .1rem 1.5rem;
-				border: 1px solid rgba($color: #130E54, $alpha: 0);
-				display: flex;
-				align-items: center;
-				span{
-					margin-right: .4rem;
+			li{
+				a{
+					padding: .1rem 1.5rem;
+					border: 1px solid rgba($color: #130E54, $alpha: 0);
+					display: flex;
+					align-items: center;
+					@include media-for (null, $tablet){
+						padding: 0;
+						font-size: 13px;
+						padding: 0.1rem 0.9rem;
+						svg{
+							display: none;
+						}
+					}
+	
+					span{
+						margin-right: .4rem;
+						@include media-for (null, $tablet){
+							margin: 0;
+						}
+					}
+					&:hover{
+						border: 1px solid $light-blue;
+						color: $light-blue;
+						border-radius: 8px;
+						svg{
+							path{
+								stroke: $light-blue;
+							}
+						}
+					}
 				}
-				&:hover{
-					border: 1px solid $light-blue;
-					color: $light-blue;
-					border-radius: 8px;
-					svg{
-						path{
-							stroke: $light-blue;
+				&:first-child{
+					a{
+						@include media-for (null, $tablet){
+							background-color: #2eb7ff;
+							border-radius: 5px;
+							color: #fff;
+							text-align: center;
 						}
 					}
 				}
 			}
+
 		}
 	}
 
 	.btn-call{
 		box-shadow: 1px 4px 6px -1px $shadow;
+		@include media-for (null, $tablet){
+			background-color: $white;
+			color: $accent;
+			font-size: 12px;
+			padding: 0 0.6rem;
+			border-radius: 4px;
+			margin-left: auto;
+            margin-right: 1rem;
+		}
+	}
+	.search-btn{
+		@include media-for (null, $tablet){
+			svg{
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+}
+
+.header-mob-down{
+	@include media-for (null, $tablet){
+		padding: .7rem 30px;
+	}
+}
+
+.header-mob-top{
+	@include media-for (null, $tablet){
+		background-color: $accent;
+		padding: .2rem 30px;
+		.btns-header{
+			color: $white;
+			svg{
+				path{
+					stroke: $white;
+				}
+			}
+		}
 	}
 }

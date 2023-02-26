@@ -5,15 +5,15 @@ body{
     color: $accent;
 }
 
-.container-fluid{
-    padding-left: var(--bs-gutter-x, 50px);
-    padding-right: var(--bs-gutter-x,50px);
-}
+
 
 p{
     font-weight: 300;
     color: $text-accent;
     font-size: 16px;
+    @include media-for (null, $tablet){
+        font-size: 14px;
+    }
 }
 
 h4{
@@ -56,6 +56,10 @@ a{
     width: 45%;
     margin: auto;
     text-align: center;
+    @include media-for (null, $tablet){
+        width: 100%;
+        text-align: left;
+    }
 }
 
 svg{
@@ -77,6 +81,9 @@ button{
 .blue-link{
     color: $light-blue;
     text-decoration: underline;
+    @include media-for (null, $tablet){
+        font-weight: 600;
+    }
     &:hover{
         color: $light-blue;
         transform: scale(1);
@@ -91,4 +98,8 @@ button{
     text-align: center;
     padding: .3rem 0;
     font-size: 15px;
+    @include media-for (null, $tablet){
+        padding: .6rem 1rem;
+    }
 }
+

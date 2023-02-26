@@ -1,57 +1,114 @@
 footer{
+    position: relative;
     padding: 4rem 0 1rem;
     color: $white;
     background-color: $accent;
     background: url(../images/dist/bg-net-footer-left.png) -5% 100%  no-repeat,url(../images/dist/bg-net-footer.png)  100% 42% no-repeat,$accent;
     background-size: 10%;
+
+    @include media-for (null, $tablet){
+        padding: 2rem 0 1rem;
+        background: none;
+        background-color: $accent;
+    }
+
     .footer-top{
         padding-bottom: 3rem;
+        @include media-for (null, $tablet){
+            padding: 0;
+        }
     }
+
     p{
         font-size: 15px;
         color: $white;
         margin: 1rem 0;
     }
+
     .nav-btns{
         display: flex;
+        @include media-for (null, $tablet){
+            justify-content: space-between;
+        }
         .btn-opacy{
-            margin-right: 1rem;
-            padding: 0 .7rem;
+            margin-right: 1.5rem;
+            padding: 0.3rem 1.5rem;
             font-weight: 400;
             font-size: 15px;
+            @include media-for (null, $tablet){
+                margin: 0;
+            }
         }
+    }
+
+    .mob-btns {
+        a{
+            font-size: 14px;
+            margin-top: 1rem;
+            font-weight: 500;
+
+            &:last-child{
+                background-color: $white;
+                color: $accent;
+            }
+        }
+        
     }
 
     .footer-down{
         border-top: 1px solid rgba($color: $white, $alpha: .5);
         padding: 1rem 0 0;
+
+        @include media-for (null, $tablet){
+            border-top: none;
+            padding: 0s;
+            img{
+                width: 84%;
+                object-fit: contain;
+            }
+            .border-mob{
+                border-bottom: 1px solid rgba($color: $white, $alpha: .1);
+            }
+        }
+
         p{
             color: rgba($color: $white, $alpha: .6);
             font-size: 14px;
+
+            @include media-for (null, $tablet){
+                font-size: 9px;
+            }
         }
     }
 
     h5{
         font-weight: 400;
         font-size: 19px;
+        margin-top: 2rem;
     }
-    nav{
-        ul{
-            li{
-                a{
-                  font-size: 14px;
-                  color: rgba($color: $white, $alpha: .6);
-                  font-weight: 300;
-                }
+
+    ul{
+        li{
+            a{
+              font-size: 14px;
+              color: rgba($color: $white, $alpha: .6);
+              font-weight: 300;
             }
         }
     }
+
     .link-line{
         text-decoration: underline;
     }
 
     .social-wrap{
         margin-top: .6rem;
+
+        @include media-for (null, $tablet){
+            position: absolute;
+            right: 8%;
+            top: 3.5%;
+        }
         a{
             margin-left: .5rem;
         }

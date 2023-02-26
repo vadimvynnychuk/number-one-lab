@@ -1,41 +1,79 @@
 .section-top{
     padding: 4rem 0 8rem;
-
+    @include media-for (null, $tablet){
+        padding: 2rem 0 1rem;
+    }
     h1{
         font-size: 82px;
         font-weight: 500;
         line-height: .9;
         margin-bottom: 1.5rem;
+        @include media-for (null, $tablet){
+            font-size: 38px;
+            margin-bottom: .5rem;
+        }
     }
 
     h2{
         font-weight: 600;
         font-size: 16px;
         color: $light-blue;
-    }
-
-    .img-wrap{
-        img{
-            width: 572px;
-            display: block;
-            margin: auto;
+        text-transform: uppercase ;
+        @include media-for (null, $tablet){
+            margin-bottom: 1rem;
         }
     }
 
+    .buttons-wrap{
+        display: flex;
+        flex-direction: column;
+        button{
+            width: 35px;
+            height: 35px;
+            box-shadow: 0px 0px 5px -1px $shadow;
+            padding: 2px;
+            margin-bottom: .5rem;
+            &:last-child{
+                background-color: $accent;
+            }
+        }
+    }
+
+    .img-wrap{
+        @include media-for (null, $tablet){
+            height: 20.5rem;
+            overflow: hidden;
+            border-radius: 0 0 7% 7%;
+        }
+        img{
+            width: 532px;
+            display: block;
+            margin: auto;
+            @include media-for (null, $tablet){
+                width: 102%;
+                
+            }
+        }
+    }
+
+    
     button{
         margin-top: .5rem;
         padding: .3rem 3.5rem;
     }
 
     .destop-btn{
-        @include media-for (null, $sm){
+        @include media-for (null, $tablet){
             display: none;
         }
     }
     .mob-btn{
         display: none;
-        @include media-for (null, $sm){
+        @include media-for (null, $tablet){
             display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 1.5rem;
         }
     }
 
@@ -46,15 +84,14 @@
         &::after{
             height: 200px;
             left: auto;
-            right: -9%;
-            top: 57%;
+            right: -13%;
+            top: 53%;
             width: 181px;
             background: url('../images/dist/arrow-wawe.svg');
             background-size: 100%;
-
         }
         &::before{
-            left: -22%;
+            left: -26%;
             right: auto;
             bottom: -10%;
             background: url('../images/dist/bg-net.png');
@@ -69,6 +106,9 @@
             content: '';
             background-position: 50% 50%;
             background-repeat: no-repeat;
+            @include media-for (null, $tablet){
+                display: none;
+            }
         }
 
         .decor-icons{
@@ -79,6 +119,13 @@
             background-color: $white;
             border-radius: 24px;
             padding: 1.5rem ;
+            @include media-for (null, $tablet){
+                width: 84px;
+                height: 84px;
+                padding: .4rem;
+                border-radius: 10px;
+                left: 5% !important;
+            }
             .vector-wrap{
                 background-color: $accent;
                 width: 50px;
@@ -87,28 +134,51 @@
                 margin-bottom: 1rem;
                 border-radius: 10px;
                 padding: .4rem;
+                @include media-for (null, $tablet){
+                    width: 40px;
+                    height: 40px;
+                    padding: .3rem;
+                    margin-bottom: .4rem;
+                }
                 img{
                     display: inline;
                     width: auto;
+                    @include media-for (null, $tablet){
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
             }
             h5{
                 text-align: center;
                 font-size: 15px;
+                @include media-for (null, $tablet){
+                    font-size: 10px;
+                    font-weight: 400;
+                }
             }
 
         }
         .decor-icons-1{
             top: 37%;
-            left: 3%;
+            left: -8%;
+            @include media-for (null, $tablet){
+                top: 3px;
+            }
         }
         .decor-icons-2{
-            right: 4%;
+            right: -6%;
             top: 20%;
+            @include media-for (null, $tablet){
+                top: 30%;
+            }
         }
         .decor-icons-3{
-            bottom: -3%;
-            right: 20%;
+            bottom: -4%;
+            right: 13%;
+            @include media-for (null, $tablet){
+                top: 60%;
+            }
         }
     }
 
