@@ -79,7 +79,7 @@ header {
 						color: $light-blue;
 						border-radius: 8px;
 						@include media-for (null, $tablet){
-							border: 1px solid $white;
+							border: 1px solid rgba($color: #130E54, $alpha: 0);
 						}
 						svg{
 							path{
