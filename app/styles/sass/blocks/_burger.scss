@@ -2,6 +2,7 @@
     position: relative;
     cursor: pointer;
     z-index: 150;
+
     span{
         display: block;
         height: 2.3px;
@@ -11,6 +12,7 @@
         position: relative;
         transition: .2s all ease-in;
         margin-bottom: 5px;
+        
         @include media-for (null, $tablet){
             background-color: $white;
             height: 2px;

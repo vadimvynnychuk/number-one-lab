@@ -3,6 +3,7 @@ header {
 	padding: 2rem 0;
 	box-shadow:  1px -1px 10px -1px $shadow;
 	border-radius: 0 0 24px 24px;
+
 	@include media-for (null, $tablet){
 		padding: 0;
 		border-radius: 0 0 12px 12px;
@@ -11,6 +12,7 @@ header {
 	.container-fluid{
 		padding-left: var(--bs-gutter-x, 50px);
 		padding-right: var(--bs-gutter-x,50px);
+
 		@include media-for (null, $tablet){
 			padding-left: var(--bs-gutter-x, 0px);
 			padding-right: var(--bs-gutter-x, 0px);
@@ -20,6 +22,7 @@ header {
 	.logo{
 		@include media-for (null, $tablet){
 			width: 40%;
+
 			a{
 				img{
 					width: 80%;
@@ -47,6 +50,7 @@ header {
 
 	nav{
 		width: 70%;
+
 		@include media-for (null, $tablet){
 			width: 68%;
 		}
@@ -59,6 +63,7 @@ header {
 					border: 1px solid rgba($color: #130E54, $alpha: 0);
 					display: flex;
 					align-items: center;
+
 					@include media-for (null, $tablet){
 						padding: 0;
 						font-size: 13px;
@@ -70,6 +75,7 @@ header {
 	
 					span{
 						margin-right: .4rem;
+
 						@include media-for (null, $tablet){
 							margin: 0;
 						}
@@ -78,6 +84,7 @@ header {
 						border: 1px solid $light-blue;
 						color: $light-blue;
 						border-radius: 8px;
+
 						@include media-for (null, $tablet){
 							border: 1px solid rgba($color: #130E54, $alpha: 0);
 						}
@@ -105,14 +112,17 @@ header {
 
 	.btn-call{
 		box-shadow: 1px 4px 6px -1px $shadow;
+
 		@include media-for (null, $tablet){
 			background-color: $white;
 			color: $accent;
 			font-size: 12px;
 			padding: 0 0.6rem;
 			border-radius: 4px;
-			margin-left: auto;
             margin-right: 1rem;
+		}
+		@include media-for (null, $sm){
+			margin-left: auto;
 		}
 	}
 	.search-btn{
@@ -135,6 +145,7 @@ header {
 	@include media-for (null, $tablet){
 		background-color: $accent;
 		padding: .2rem 15px;
+		
 		.btns-header{
 			color: $white;
 			svg{

@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
           
             480: {
-              slidesPerView: 1,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
     
@@ -53,5 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		overlay.classList.toggle("overlay");
 		body.classList.toggle("overflow");
 	});
+
+
+  //slider-element-click
+
+  $('.slide-card').on('click', function(){
+    $('.slide-card').removeClass('slide-selected');
+    $(this).addClass('slide-selected');
+  });;
+
+
 
 })

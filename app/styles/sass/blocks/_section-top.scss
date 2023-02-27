@@ -41,9 +41,13 @@
 
     .img-wrap{
         @include media-for (null, $tablet){
-            height: 20.5rem;
+            height: 40.5rem;
             overflow: hidden;
             border-radius: 0 0 7% 7%;
+        }
+
+        @include media-for (null, $sm){
+            height: 20.5rem;
         }
         img{
             width: 532px;
@@ -69,6 +73,7 @@
     }
     .mob-btn{
         display: none;
+
         @include media-for (null, $tablet){
             display: block;
             width: 100%;
@@ -90,6 +95,7 @@
             background: url('../images/dist/arrow-wawe.svg');
             background-size: 100%;
         }
+
         &::before{
             left: -26%;
             right: auto;
@@ -106,6 +112,7 @@
             content: '';
             background-position: 50% 50%;
             background-repeat: no-repeat;
+
             @include media-for (null, $tablet){
                 display: none;
             }
@@ -119,6 +126,7 @@
             background-color: $white;
             border-radius: 24px;
             padding: 1.5rem ;
+
             @include media-for (null, $tablet){
                 width: 84px;
                 height: 84px;
@@ -134,6 +142,7 @@
                 margin-bottom: 1rem;
                 border-radius: 10px;
                 padding: .4rem;
+
                 @include media-for (null, $tablet){
                     width: 40px;
                     height: 40px;
@@ -143,6 +152,7 @@
                 img{
                     display: inline;
                     width: auto;
+
                     @include media-for (null, $tablet){
                         width: 30px;
                         height: 30px;
@@ -152,6 +162,7 @@
             h5{
                 text-align: center;
                 font-size: 15px;
+
                 @include media-for (null, $tablet){
                     font-size: 10px;
                     font-weight: 400;
@@ -162,6 +173,7 @@
         .decor-icons-1{
             top: 37%;
             left: -8%;
+
             @include media-for (null, $tablet){
                 top: 3px;
             }
@@ -169,6 +181,7 @@
         .decor-icons-2{
             right: -6%;
             top: 20%;
+
             @include media-for (null, $tablet){
                 top: 30%;
             }
@@ -176,6 +189,7 @@
         .decor-icons-3{
             bottom: -4%;
             right: 13%;
+
             @include media-for (null, $tablet){
                 top: 60%;
             }

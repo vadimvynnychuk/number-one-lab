@@ -1,11 +1,20 @@
 .section-parnters{
     padding: 10rem 0 6rem;
+
+    h2{
+        font-size: 38px;
+        font-weight: 500;
+        text-align: center;
+
+        @include media-for (null, $sm){
+            text-align: left;
+            
+        }
+    }
+
     @include media-for (null, $tablet){
         padding: 2.5rem 0;
-        h2{
-            font-size: 38px;
-            font-weight: 500;
-        }
+        
     }
     .blue-link{
         text-decoration: none;
@@ -13,11 +22,19 @@
 
     .brands{
         margin-top: 5rem;
+
         @include media-for (null, $tablet){
             margin-top: 2rem;
         }
         .brands-wrap{
             margin-bottom: 3rem;
+        }
+        img{
+            @include media-for (null, $sm){
+                display: block;
+                width: 80%;
+                margin: auto;
+            }
         }
     }
 }
